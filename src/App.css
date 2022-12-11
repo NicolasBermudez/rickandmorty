@@ -1,0 +1,140 @@
+.App {
+  background-image: url(./assets/images.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.App__loading {
+  background-image: url(./assets/loading.jpg);
+  background-size: cover;
+  aspect-ratio: 1;
+  width: 100%;
+  height: 100vh;
+  padding: 2em;
+  border: 1px solid;
+  position: absolute;
+  z-index: 100;
+}
+
+.App__loadin-close {
+  transition: 1s;
+  translate: -100%;
+}
+
+.App__form {
+  margin-right: 10px;
+  padding: 10px;
+  position: relative;
+}
+
+.App__input-search {
+  margin-bottom: 5px;
+  background-color: #AAA;
+  border: none;
+  border-radius: 3px;
+}
+
+.App__btn-search {
+  background-color: #4d4c4c;
+  border-radius: 4px;
+  border: none;
+}
+
+.location-container{
+  background: #062226DD;
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.residents-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card {
+  width: 100%;
+  max-width: 270px;
+  transition: transform 200ms ease;
+  border-radius: 20px;
+}
+
+.card__header {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+.card__avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.card__circle-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  top: 10%;
+  width: 40%;
+  background-color: #062226;
+  padding: 5px 0 5px 5px;
+  border-radius: 0 8px 8px 0;
+  color: #fff;
+}
+
+.card__circle {
+  padding-right: 10%;
+  width: 12px;
+  aspect-ratio: 1;
+  background: #444141;
+  border-radius: 50%;
+}
+
+.Alive {
+  background-color: green;
+}
+
+.Dead {
+  background-color: red;
+}
+
+.card__body {
+  padding: 15px;
+  background: #062226;
+  color: #fff;
+  padding-bottom: 20px;
+  border-radius: 0 0 20px 20px;
+}
+
+.card__name {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 0.7em;
+}
+
+.card__list {
+  display: grid;
+  gap: 0.08em;
+}
+
+.card__item-label {
+  display: block;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #3d3c3c;
+  position: relative;
+  left: 0.4em;
+}
